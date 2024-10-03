@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    
+    <style>
+    @font-face {
+        font-family: 'Verdana-Bold';
+        src: url('./fonts/verdana-bold.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Verdana-Regular';
+        src: url('./fonts/verdana.ttf') format('truetype');
+    }
+
+    /* CSS Reset ============ */
+    html {
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+        text-size-adjust: none;
+        line-height: 1.4;
+    }
+
+    *,
+    *::before,
+    *::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+    img,
+    picture {
+        max-inline-size: 100%;
+        block-size: auto;
+        display: block;
+    }
+
+    /* CSS Reset END ============ */
+
+    /* ======= FONT STUFF ========= */
+
+    body, p, a {
+        font-family: "Verdana-Regular", system-ui, sans-serif
+    }
+
+    h1,
+    h2 {
+        font-family: "Verdana-Bold", system-ui, sans-serif;
+    }
+
+    .profile-name,
+    .profile-role,
+    .resume-title,
+    .certifications-title,
+    .contact-title {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .profile-name {
+        color: #b4c292;
+        font-size: 1.5rem; /* 24px */
+    }
+    
+    .profile-role, .resume-title, .certifications-title, .contact-title {
+        color: #fdf5e6;
+        font-size: 1rem;
+    }
+
+    .resume small {
+        font-size: 0.75rem; /* 12px */
+        color: #b4c292;
+    }
+
+     /* ======= FONT STUFF END ====== */
+
+    body {
+        background: linear-gradient(to right, #414345, #232526);
+        padding: 10px;
+    }
+
+    main, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile {
+        margin-block-start: 3.125rem; /* 50px */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile, .resume, .certifications {
+        margin-block-end: 1.875rem; /* 30px */
+    }
+
+    .profile-avatar {
+        border: 5px solid #fdf5e6;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        object-position: 50% 15%;
+    }
+
+    .profile-name {
+        margin-block: 0.625rem 0.3125rem; /* 10px 5px */
+    }
+
+    .profile-role {
+        color: #ffcc66;
+    }
+
+    .resume-title, .certifications-title, .contact-title {
+        margin-block-end: 0.625rem; /* 10px */
+    }
+
+    .resume-btn {
+        display: block;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background: #fdf5e6;
+        color: #232526;
+        text-decoration: none;
+    }
+
+    .resume-btn:hover {
+        background: #fdf5e6b0;
+    }
+
+    .certifications-container {
+        display: flex;
+        justify-content:center;
+        gap: 20px;
+        width: 100%;
+        height: 17.5rem; /* 280px */
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .contact {
+        margin-block-end: 3.125rem;
+    }
+
+    .contact-phone, .contact-email {
+        color: #b4c292;
+        margin-block-end: 0.3125rem; /* 5px */
+        text-decoration: none;
+    }
+
+    .contact-phone:hover, .contact-email:hover {
+        text-decoration: underline;
+    }
+
+    /* 400px */
+    @media (max-width: 25rem) {
+        .certifications-container {
+            flex-direction: column;
+            height: 34.375rem; /* 550px */
+        }
+
+        .certifications-container > * {
+            height: 15.625rem; /* 250px */
+        }
+    }
+
+    </style>
+    <title>Flávio César - Suporte Técnico</title>
+</head>
+
+<body>
+    <main>
+        <section class="profile">
+            <img class="profile-avatar" width="200" height="200" src="./images/avatar.jpg" alt="Avatar profile">
+            <h1 class="profile-name">Flávio César</h1>
+            <p class="profile-role">Suporte Técnico</p>
+        </section>
+        <section class="resume">
+            <h2 class="resume-title">Currículo</h2>
+            <a href="https://curriculo-flaviocesar.s3.sa-east-1.amazonaws.com/Curri%CC%81culo.pdf" target="_blank" class="resume-btn">Currículo em PDF (Baixar)</a>
+            <small>* Sempre atualizado</small>
+        </section>
+        <section class="certifications">
+            <h2 class="certifications-title">Certificações</h2>
+            <div class="certifications-container">
+                <div data-iframe-width="150" data-iframe-height="auto" data-share-badge-id="59414952-0ec6-474f-bc24-f12f3b61fff9" data-share-badge-host="https://www.credly.com"></div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div data-iframe-width="150" data-iframe-height="auto" data-share-badge-id="ddf22644-d2b7-490c-950d-6f91e1ad4e74" data-share-badge-host="https://www.credly.com"></div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            </div>
+        </section>
+    </main>
+    <footer class="contact">
+        <h2 class="contact-title">Contatos</h2>
+        <a href="https://wa.me//5561992026954" target="_blank" class="contact-phone">+55 61 992026954 (Whatsapp)</a>
+        <a href="mailto: flavio.cmb@gmail.com" target="_blank" class="contact-email">flavio.cmb@gmail.com</a>
+    </footer>
+</body>
+
+</html>
